@@ -41,22 +41,6 @@ void handle_tick(struct tm *tick_time, TimeUnits units_changed) {
   display_time(tick_time);
 }
 
-/*void update_date_format() {
-  int date = 2;
-  int month = 38;
-  int year = 74;
-
-  GRect rect = layer_get_frame(text_layer_get_layer(date_text));
-  rect.origin.x = date;
-  layer_set_frame(text_layer_get_layer(date_text), rect);
-  rect = layer_get_frame(text_layer_get_layer(month_text));
-  rect.origin.x = month;
-  layer_set_frame(text_layer_get_layer(month_text), rect);
-  rect = layer_get_frame(text_layer_get_layer(year_text));
-  rect.origin.x = year;
-  layer_set_frame(text_layer_get_layer(year_text), rect);
-}*/
-
 // utility function for initializing a text layer
 void init_text(TextLayer* textlayer, ResourceId font) {
   text_layer_set_text_alignment(textlayer, GTextAlignmentCenter);
